@@ -6,7 +6,7 @@
 >
 > GraalVM removes the isolation between programming languages and enables interoperability in a shared runtime. It can run either standalone or in the context of OpenJDK, Node.js, Oracle Database, or MySQL.
 >
-> `[GraalVM website](https://www.graalvm.org/)`
+> [GraalVM website](https://www.graalvm.org/)
 
 # Usage
 
