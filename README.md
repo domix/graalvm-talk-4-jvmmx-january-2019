@@ -8,11 +8,6 @@
 >
 > [GraalVM website](https://www.graalvm.org/)
 
-## Usage
-
-You can use GraalVM as replacement of your `JDK` and `JRE` if you want. You will not notice any difference at all.
-
-[GraalVM installation](00-install.md)
 
 ## Features
 
@@ -23,3 +18,10 @@ You can use GraalVM as replacement of your `JDK` and `JRE` if you want. You will
 * Python support is just beginning.
 * GraalVM can run embedded in a Java VM, stand-alone, or embedded in data stores like the Oracle RDBMS and MySQL
 * There is a community edition (CE) and an enterprise edition (EE) of GraalVM. The community edition is distributed under an open source license. It is free to use in production and comes with no strings attached, but also no guarantees or support. The enterprise edition is available from the Oracle Technology Network under an evaluation license.
+* GraalVM Enterprise Edition (EE) will be commercially supported at the time EE 1.0 will be GA release. Community Edition is community supported as it is open source project.
+
+## Usage
+
+You can use GraalVM as replacement of your `JDK` and `JRE` if you want. You will not notice any difference at all.
+
+[GraalVM installation](00-install.md)
