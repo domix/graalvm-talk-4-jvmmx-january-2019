@@ -87,9 +87,10 @@ Available Java Versions
 
 ## Running GraalVM
 
-´´´
+```
 $ java -version
 openjdk version "1.8.0_192"
 OpenJDK Runtime Environment (build 1.8.0_192-20181024123616.buildslave.jdk8u-src-tar--b12)
 GraalVM 1.0.0-rc11 (build 25.192-b12-jvmci-0.53, mixed mode)
-´´´
+```
+
