@@ -1,6 +1,6 @@
 # Truffle
 
-[Truffle] is a framework for implementing languages using nothing more than a simple abstract syntax tree interpreter.
+`Truffle` is a framework for implementing languages using nothing more than a simple abstract syntax tree interpreter.
 
 Also is a framework for writing interpreters with annotations and small bits of extra code that will be converted into `JIT` compiling `VMs` automatically. The resulting runtimes have peak performance competitive with the best hand-tuned language-specific compilers on the market. For example, the `TruffleJS` engine which implements `JavaScript` is competitive with `V8` in benchmarks. The `RubyTruffle` engine is faster than all other `Ruby` implementations by far.
 
