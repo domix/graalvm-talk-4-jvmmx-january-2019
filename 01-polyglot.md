@@ -1,12 +1,12 @@
 # Truffle
 
-Truffle is a framework for implementing languages using nothing more than a simple abstract syntax tree interpreter.
+[Truffle] is a framework for implementing languages using nothing more than a simple abstract syntax tree interpreter.
 
-Also is a framework for writing interpreters with annotations and small bits of extra code that will be converted into JIT compiling VMs automatically. The resulting runtimes have peak performance competitive with the best hand-tuned language-specific compilers on the market. For example, the TruffleJS engine which implements JavaScript is competitive with V8 in benchmarks. The RubyTruffle engine is faster than all other Ruby implementations by far.
+Also is a framework for writing interpreters with annotations and small bits of extra code that will be converted into `JIT` compiling `VMs` automatically. The resulting runtimes have peak performance competitive with the best hand-tuned language-specific compilers on the market. For example, the `TruffleJS` engine which implements `JavaScript` is competitive with `V8` in benchmarks. The `RubyTruffle` engine is faster than all other `Ruby` implementations by far.
 
-Truffle provides a language interop framework called Polyglot that allows Truffle languages to call each other, and a thing called the Truffle Object Storage Model that standardises and optimises much of the behaviour of dynamically typed objects, allowing languages to share them too. And because Graal & Truffle are fundamentally built on top of the JVM, all these languages can also call in and out of JVM bytecode-based languages like Java, Scala and Kotlin too.
+`Truffle` provides a language interop framework called `Polyglot` that allows `Truffle` languages to call each other, and a thing called the `Truffle Object Storage Model` that standardises and optimises much of the behaviour of dynamically typed objects, allowing languages to share them too. And because `Graal` & `Truffle` are fundamentally built on top of the `JVM`, all these languages can also call in and out of `JVM` bytecode-based languages like `Java`, `Scala` and `Kotlin` too.
 
-The way `Polyglot` works is unusual. Because Truffle provides a standard framework for expressing nodes in an abstract syntax tree, calling into another language doesn’t involve any complex hand-written binding layers. Instead, invoking a function simply joins the ASTs of the two languages together. Those two ASTs are then compiled and optimised by Graal as a single unit, meaning any complexity introduced by crossing the language barrier can be analysed and eliminated.
+The way `Polyglot` works is unusual. Because `Truffle` provides a standard framework for expressing nodes in an abstract syntax tree, calling into another language doesn’t involve any complex hand-written binding layers. Instead, invoking a function simply joins the ASTs of the two languages together. Those two ASTs are then compiled and optimised by Graal as a single unit, meaning any complexity introduced by crossing the language barrier can be analysed and eliminated.
 
 It’s for this reason that researchers decided to implement a C interpreter on top of Truffle. We normally think of C as being an inherently compiled language, but there’s no particular reason it must be so, and in fact C interpreters have a long history of usage.
 
