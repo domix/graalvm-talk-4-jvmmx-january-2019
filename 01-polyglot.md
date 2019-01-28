@@ -33,7 +33,7 @@ To rebuild and refresh the native binaries, use the following command:
 Running with typical Ruby installation:
 
 ```
-$ /usr/bin/ruby factorial.rb 20
+$ /usr/bin/ruby 01-programs/factorial.rb 20
 Engine:   ruby, Platform: universal.x86_64-darwin18, Version:  2.3.7
 2432902008176640000
 ```
@@ -41,7 +41,7 @@ Engine:   ruby, Platform: universal.x86_64-darwin18, Version:  2.3.7
 Running with GraalVM:
 
 ```
-$JAVA_HOME/jre/languages/ruby/bin/ruby factorial.rb 20
+$ $JAVA_HOME/jre/languages/ruby/bin/ruby 01-programs/factorial.rb 20
 Engine:   truffleruby, Platform: x86_64-darwin, Version:  2.4.4
 2432902008176640000
 $JAVA_HOME/jre/languages/ruby/bin/ruby factorial.rb 20  0.06s user 0.12s system 40% cpu 0.440 total
