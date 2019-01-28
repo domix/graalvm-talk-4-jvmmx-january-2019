@@ -4,7 +4,8 @@ https://www.graalvm.org/docs/getting-started/#install-graalvm
 
 # SDK
 
-  $ sdk list java
-
+```
+$ sdk list java
+```
 
 ss
