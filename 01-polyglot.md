@@ -16,8 +16,9 @@ When the people creating RubyTruffle hit this problem they came up with a clever
 
 Resources to review:
 
-[Very High Performance C Extensions For JRuby+Truffle](https://chrisseaton.com/truffleruby/cext/)
-[Paper: PDF. High-Performance Cross-Language
+* [Very High Performance C Extensions For JRuby+Truffle](https://chrisseaton.com/truffleruby/cext/)
+
+* [Paper: PDF. High-Performance Cross-Language
 Interoperability in a Multi-language Runtime](https://chrisseaton.com/rubytruffle/dls15-interop/dls15-interop.pdf)
 
 
