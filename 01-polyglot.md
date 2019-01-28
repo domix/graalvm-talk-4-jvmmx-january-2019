@@ -135,5 +135,6 @@ Running with GraalVM:
 $ $JAVA_HOME/jre/languages/js/bin/node 01-programs/factorial.js 20
 Version:  v10.9.0
 V8:       6.7.0.0-node.0
+2432902008176640000
 ```
 
