@@ -1,6 +1,6 @@
 # GraalVM talk
 
-# What is GraalVM?
+## What is GraalVM?
 
 > GraalVM is a universal virtual machine for running applications written in JavaScript, Python, Ruby, R, JVM-based languages like Java, Scala, Kotlin, Clojure, and LLVM-based languages such as C and C++.
 >
@@ -8,9 +8,16 @@
 >
 > [GraalVM website](https://www.graalvm.org/)
 
-# Usage
+## Usage
 
 You can use GraalVM as replacement of your `JDK` and `JRE` if you want. You will not notice any difference at all.
 
+[GraalVM installation](00-install.md)
 
-1. [GraalVM installation](00-install.md)
+## Features
+
+* GraalVM is based in OpenJDK
+* So far, you can run any JVM based language with GraalVM, also JavaScript.
+* For Ruby and R the team is working on improved completeness.
+* LLVM-based languages is supported
+* Python support is just beginning.
