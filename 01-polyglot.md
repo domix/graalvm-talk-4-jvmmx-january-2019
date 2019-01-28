@@ -22,8 +22,6 @@ Resources to review:
 Interoperability in a Multi-language Runtime](https://chrisseaton.com/rubytruffle/dls15-interop/dls15-interop.pdf)
 
 
-
-
 # Examples to running multiple languages with GraalVM
 
 ## Ruby
@@ -71,9 +69,6 @@ $ $JAVA_HOME/jre/languages/ruby/bin/ruby 01-programs/factorial.rb 20
 Engine:   truffleruby, Platform: x86_64-darwin, Version:  2.4.4
 2432902008176640000
 ```
-
-
-
 ## Python
 
 In order to run Python programs we should install the GraalVM binary using the `gu` program:
@@ -138,3 +133,57 @@ V8:       6.7.0.0-node.0
 2432902008176640000
 ```
 
+## R
+
+In order to run `R` programs we should install the `GraalVM` binary using the `gu` program:
+
+```
+$ gu install r
+Downloading: Component catalog
+Processing component archive: Component r
+Downloading: Component r
+Installing new component: FastR (org.graalvm.R, version 1.0.0-rc11)
+NOTES:
+---------------
+Some R packages need a system-dependent configuration before they can be 
+installed. A generic configuration that works out of the box in most cases is 
+provided by default. If you wish to fine-tune the configuration to your system 
+or should you encounter any issues during R package installation, try running 
+the following script that adjusts the configuration to your system:
+    $JAVA_HOME/jre/languages/R/bin/configure_fastr
+
+The R component comes without native image by default. If you wish to build 
+the native image, which provides faster startup, but slightly slower peak 
+performance, then run the following:
+   $JAVA_HOME/jre/languages/R/bin/install_r_native_image
+
+The native image is then used by default. Pass '--jvm' flag to the R or 
+Rscript launcher to use JVM instead of the native image. Note that the native 
+image is not stable yet and is intended for evaluation purposes and 
+experiments. Some features may not work when the native image is installed, 
+most notably the --polyglot switch. The native image can be uninstalled using 
+the installation script with 'uninstall' argument.
+
+See http://www.graalvm.org/docs/reference-manual/languages/r for more.
+```
+
+Running with typical R installation:
+
+```
+$ /usr/local/bin/Rscript 01-programs/factorial.r 20
+Durante la inicialización - Warning messages:
+1: Setting LC_COLLATE failed, using "C"
+2: Setting LC_TIME failed, using "C"
+3: Setting LC_MESSAGES failed, using "C"
+4: Setting LC_MONETARY failed, using "C"
+[1] "R version 3.5.2 (2018-12-20)"
+[1] "The factorial of 20 is 2432902008176640000"
+```
+
+Running with GraalVM:
+
+```
+$ $JAVA_HOME/jre/languages/R/bin/Rscript 01-programs/factorial.r 20
+[1] "FastR version 3.5.1 (2018-07-02)"
+[1] "The factorial of 20 is 2432902008176640256"
+```
