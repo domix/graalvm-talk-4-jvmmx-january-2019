@@ -1,4 +1,4 @@
-# graalvm-talk-4-jvmmx-january-2019
+# GraalVM talk
 
 # What is GraalVM?
 
@@ -10,7 +10,7 @@
 
 # Usage
 
-You can use GraalVM as replacement of your `JDK` and `JRE` if you want. You will not notice any difference.
+You can use GraalVM as replacement of your `JDK` and `JRE` if you want. You will not notice any difference at all.
 
 
 1. [GraalVM installation](00-install.md)
