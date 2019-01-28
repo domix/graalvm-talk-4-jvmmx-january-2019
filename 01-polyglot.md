@@ -107,7 +107,8 @@ Running with GraalVM:
 
 ```
 $ $JAVA_HOME/jre/languages/python/bin/graalpython 01-programs/factorial.py 20
-Please note: This Python implementation is in the very early stages, and can run little more than basic benchmarks at this point.
+Please note: This Python implementation is in the very early stages, 
+and can run little more than basic benchmarks at this point.
 version_info(major=3, minor=7, micro=0, releaselevel='dev', serial=0)
 2432902008176640000
 ```
