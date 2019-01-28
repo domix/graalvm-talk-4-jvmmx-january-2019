@@ -6,7 +6,11 @@
 >
 > GraalVM removes the isolation between programming languages and enables interoperability in a shared runtime. It can run either standalone or in the context of OpenJDK, Node.js, Oracle Database, or MySQL.
 >
-> - GraalVM website (https://www.graalvm.org/)
+> `GraalVM website (https://www.graalvm.org/)`
+
+# Usage
+
+You can use GraalVM as replacement of your `JDK` and `JRE` if you want. You will not notice any difference.
 
 
 1. [GraalVM installation](00-install.md)
