@@ -4,7 +4,7 @@ https://www.graalvm.org/docs/getting-started/#install-graalvm
 
 # SDK
 
-My personal and preferred way to install any Java distribution and GraalVM is with SDKManager.
+My personal and preferred way to install any `Java` distribution and `GraalVM` is with `SDKManager`.
 
 ## Install SDK
 
@@ -52,7 +52,7 @@ $ sdl install java 1.0.0-rc-11-grl
 
 Please wait...
 
-Then we verify the installationb
+Then we verify the installation
 
 ```
 $ sdk list java
