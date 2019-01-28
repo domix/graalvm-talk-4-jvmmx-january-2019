@@ -113,3 +113,27 @@ version_info(major=3, minor=7, micro=0, releaselevel='dev', serial=0)
 2432902008176640000
 ```
 
+
+
+## JavaScript
+
+JavaScript support will work out of the box
+
+
+Running with typical NodeJS installation:
+
+```
+$ /usr/local/bin/node 01-programs/factorial.js 20
+Version:  v11.7.0
+V8:       7.0.276.38-node.16
+2432902008176640000
+```
+
+Running with GraalVM:
+
+```
+$ $JAVA_HOME/jre/languages/js/bin/node 01-programs/factorial.js 20
+Version:  v10.9.0
+V8:       6.7.0.0-node.0
+```
+
