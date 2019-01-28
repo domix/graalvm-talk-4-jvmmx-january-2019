@@ -17,16 +17,17 @@ The Ruby openssl C extension needs to be recompiled on your system to work with 
 First, make sure TruffleRuby's dependencies are installed, which are described at:
   https://github.com/oracle/truffleruby/blob/master/README.md#dependencies
 Then run the following command:
-        /Users/domix/.sdkman/candidates/java/1.0.0-rc-11-grl/jre/languages/ruby/lib/truffle/post_install_hook.sh
+        $JAVA_HOME/jre/languages/ruby/lib/truffle/post_install_hook.sh
 
 
 IMPORTANT NOTE:
 ---------------
-Set of Graal VM components that provide language implementations have changed. The Polyglot native image and polyglot native C library may be out of sync:
+Set of Graal VM components that provide language implementations have changed. 
+The Polyglot native image and polyglot native C library may be out of sync:
 - new languages may not be accessible
 - removed languages may cause the native binary to fail on missing resources or libraries.
 To rebuild and refresh the native binaries, use the following command:
-        /Users/domix/.sdkman/candidates/java/1.0.0-rc-11-grl/jre/bin/gu rebuild-images
+        $JAVA_HOME/jre/bin/gu rebuild-images
 ```
 
 Running with typical Ruby installation:
