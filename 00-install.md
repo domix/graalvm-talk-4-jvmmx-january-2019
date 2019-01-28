@@ -50,12 +50,12 @@ Available Java Versions
 ## Installing the most recent `GraalVM` version.
 
 ```
-$ sdl install java 1.0.0-rc-11-grl
+$ sdk install java 1.0.0-rc-11-grl
 ```
 
-Please wait...
+Please wait until installation ends...
 
-Then we verify the installation
+Then we can verify the installation:
 
 ```
 $ sdk list java
@@ -84,3 +84,12 @@ Available Java Versions
 > - currently in use
 ================================================================================
 ```
+
+## Running GraalVM
+
+´´´
+$ java -version
+openjdk version "1.8.0_192"
+OpenJDK Runtime Environment (build 1.8.0_192-20181024123616.buildslave.jdk8u-src-tar--b12)
+GraalVM 1.0.0-rc11 (build 25.192-b12-jvmci-0.53, mixed mode)
+´´´
