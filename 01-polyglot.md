@@ -72,3 +72,43 @@ Engine:   truffleruby, Platform: x86_64-darwin, Version:  2.4.4
 2432902008176640000
 $JAVA_HOME/jre/languages/ruby/bin/ruby factorial.rb 20  0.06s user 0.12s system 40% cpu 0.440 total
 ```
+
+
+
+## Python
+
+In order to run Python programs we should install the GraalVM binary using the `gu` program:
+
+```
+$ gu install python
+Downloading: Component catalog
+Processing component archive: Component python
+Downloading: Component python
+Installing new component: Graal.Python (org.graalvm.python, version 1.0.0-rc11)
+
+IMPORTANT NOTE:
+---------------
+Set of Graal VM components that provide language implementations have changed. The Polyglot native image and polyglot native C library may be out of sync:
+- new languages may not be accessible
+- removed languages may cause the native binary to fail on missing resources or libraries.
+To rebuild and refresh the native binaries, use the following command:
+        $JAVA_HOME/jre/bin/gu rebuild-images
+```
+
+Running with typical Ruby installation:
+
+```
+$ /usr/bin/ruby 01-programs/factorial.rb 20
+Engine:   ruby, Platform: universal.x86_64-darwin18, Version:  2.3.7
+2432902008176640000
+```
+
+Running with GraalVM:
+
+```
+$ $JAVA_HOME/jre/languages/ruby/bin/ruby 01-programs/factorial.rb 20
+Engine:   truffleruby, Platform: x86_64-darwin, Version:  2.4.4
+2432902008176640000
+$JAVA_HOME/jre/languages/ruby/bin/ruby factorial.rb 20  0.06s user 0.12s system 40% cpu 0.440 total
+```
+
