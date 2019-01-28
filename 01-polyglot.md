@@ -87,7 +87,8 @@ Installing new component: Graal.Python (org.graalvm.python, version 1.0.0-rc11)
 
 IMPORTANT NOTE:
 ---------------
-Set of Graal VM components that provide language implementations have changed. The Polyglot native image and polyglot native C library may be out of sync:
+Set of Graal VM components that provide language implementations have changed. 
+The Polyglot native image and polyglot native C library may be out of sync:
 - new languages may not be accessible
 - removed languages may cause the native binary to fail on missing resources or libraries.
 To rebuild and refresh the native binaries, use the following command:
