@@ -70,7 +70,6 @@ Running with GraalVM:
 $ $JAVA_HOME/jre/languages/ruby/bin/ruby 01-programs/factorial.rb 20
 Engine:   truffleruby, Platform: x86_64-darwin, Version:  2.4.4
 2432902008176640000
-$JAVA_HOME/jre/languages/ruby/bin/ruby factorial.rb 20  0.06s user 0.12s system 40% cpu 0.440 total
 ```
 
 
@@ -95,20 +94,20 @@ To rebuild and refresh the native binaries, use the following command:
         $JAVA_HOME/jre/bin/gu rebuild-images
 ```
 
-Running with typical Ruby installation:
+Running with typical Python installation:
 
 ```
-$ /usr/bin/ruby 01-programs/factorial.rb 20
-Engine:   ruby, Platform: universal.x86_64-darwin18, Version:  2.3.7
+$ /usr/bin/python 01-programs/factorial.py 20
+sys.version_info(major=2, minor=7, micro=10, releaselevel='final', serial=0)
 2432902008176640000
 ```
 
 Running with GraalVM:
 
 ```
-$ $JAVA_HOME/jre/languages/ruby/bin/ruby 01-programs/factorial.rb 20
-Engine:   truffleruby, Platform: x86_64-darwin, Version:  2.4.4
+$ $JAVA_HOME/jre/languages/python/bin/graalpython 01-programs/factorial.py 20
+Please note: This Python implementation is in the very early stages, and can run little more than basic benchmarks at this point.
+version_info(major=3, minor=7, micro=0, releaselevel='dev', serial=0)
 2432902008176640000
-$JAVA_HOME/jre/languages/ruby/bin/ruby factorial.rb 20  0.06s user 0.12s system 40% cpu 0.440 total
 ```
 
