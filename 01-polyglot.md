@@ -187,3 +187,23 @@ $ $JAVA_HOME/jre/languages/R/bin/Rscript 01-programs/factorial.r 20
 [1] "FastR version 3.5.1 (2018-07-02)"
 [1] "The factorial of 20 is 2432902008176640256"
 ```
+
+
+## LLVM
+
+LLVM support will work out of the box
+
+
+First, let´s compile the `C` code:
+
+```
+$ clang -c -O1 -emit-llvm 01-programs/factorial.c -o 01-programs/factorial.bc
+```
+
+Now run the LLVM bytecode with GraalVM:
+
+```
+$ lli 01-programs/factorial.bc
+Enter an integer: 20
+Factorial of 20 = 2432902008176640000
+```

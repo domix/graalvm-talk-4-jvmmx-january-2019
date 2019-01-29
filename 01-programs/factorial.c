@@ -1,8 +1,13 @@
 #include <stdio.h>
-int main()
+#include <stdlib.h>
+#include <string.h>
+int main(int argc, char *argv[] )
 {
     int n, i;
     unsigned long long factorial = 1;
+
+    
+    //printf("Factorial of %d", atoi(argv[1]));
 
     printf("Enter an integer: ");
     scanf("%d",&n);
