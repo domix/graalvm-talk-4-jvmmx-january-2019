@@ -207,3 +207,5 @@ $ lli 01-programs/factorial.bc
 Enter an integer: 20
 Factorial of 20 = 2432902008176640000
 ```
+
+[Go Native!](03-native.md)
